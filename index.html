@@ -1,87 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Přemek Palát</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <section id="about">
-    <h1>ABOUT ME</h1>
-    <p>Write about yourself here...</p>
-  </section>
 
-  <section id="projects">
-    <h1>PROJECTS</h1>
+  <div class="aboutMeSection section">
+    <div class="contentSection">
+      <h1>Přemek Palát</h1>
+      <p>I design and develop software, web, embedded, and hardware solutions that bring ideas to life.</p>
+    </div>
+    <div class="fillerSection">
 
-    <!-- Horizontal slider wrapper for categories -->
-    <div class="swiper project-categories">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="project-category">Mechanic
-            <div class="swiper subSwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide project-item">Mechanic Project 1</div>
-                <div class="swiper-slide project-item">Mechanic Project 2</div>
-                <div class="swiper-slide project-item">Mechanic Project 3</div>
+    </div>
+
+  </div>
+
+  <div class="projectsSection section">
+    <div class="section projectsSection">
+      <div class="contentSection">
+
+        <!-- Projects Categories (horizontal swiper for each category) -->
+        <div class="swiper projectsCategories">
+          <div class="swiper-wrapper">
+            <!-- Software Category -->
+            <div class="swiper-slide projectCategorie">
+              <h2>Software</h2>
+              <div class="swiper subSwiper subSwiperSoftware">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide project">Project 1</div>
+                  <div class="swiper-slide project">Project 2</div>
+                  <div class="swiper-slide project">Project 3</div>
+                  <div class="swiper-slide project">Project 4</div>
+                  <div class="swiper-slide project">Project 5</div>
+                  <div class="swiper-slide project">Project 6</div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="project-category">Electronics
-            <div class="swiper subSwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide project-item">Electronics Project 1</div>
-                <div class="swiper-slide project-item">Electronics Project 2</div>
+            <!-- Web Category -->
+            <div class="swiper-slide projectCategorie">
+              <h2>Web</h2>
+              <div class="swiper subSwiper subSwiperWeb">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><div class="project">1</div></div>
+                  <div class="swiper-slide project">Project 2</div>
+                  <div class="swiper-slide project">Project 3</div>
+                  <div class="swiper-slide project">Project 4</div>
+                  <div class="swiper-slide project">Project 5</div>
+                  <div class="swiper-slide project">Project 6</div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="project-category">Web
-            <div class="swiper subSwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide project-item">Web Project 1</div>
-                <div class="swiper-slide project-item">Web Project 2</div>
-                <div class="swiper-slide project-item">Web Project 3</div>
+            <!-- Hardware Category -->
+            <div class="swiper-slide projectCategorie">
+              <h2>Hardware</h2>
+              <div class="swiper subSwiper subSwiperHardware">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide project">Project 1</div>
+                  <div class="swiper-slide project">Project 2</div>
+                  <div class="swiper-slide project">Project 3</div>
+                  <div class="swiper-slide project">Project 4</div>
+                  <div class="swiper-slide project">Project 5</div>
+                  <div class="swiper-slide project">Project 6</div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="swiper-slide">
-          <div class="project-category">Software
-            <div class="swiper subSwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide project-item">Software Project 1</div>
-                <div class="swiper-slide project-item">Software Project 2</div>
-              </div>
-            </div>
           </div>
         </div>
 
       </div>
+      <div class="fillerSection"></div>
     </div>
-  </section>
+  </div>
 
-  <section id="contact">
-    <h1>CONTACT</h1>
-    <p>Email: you@example.com</p>
-    <p>Socials: add links here</p>
-  </section>
+  <div class="contactsSection section">
+    <div class="contentSection">
+      <h1>Contacts</h1>
+      <p>You can catch me here </p>
+      <a href="mailto:palatpremek@gmail.com">palatpremek@gmail.com</a>
+      <a href="https://github.com/Sogba"></a>
+    </div>
+    <div class="fillerSection">
 
-  <section id="homework">
-    <h1>HOMEWORK</h1>
-    <p>Homework list goes here...</p>
-  </section>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  </div>
+
+  <div class="tasksSection section">
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="main.js"></script>
 </body>
+
 </html>

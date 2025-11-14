@@ -1,32 +1,72 @@
-const categorySwiper = new Swiper('.project-categories', {
+const swiper = new Swiper('.projectsCategories', {
+  direction: 'vertical',
+  loop: true,
   grabCursor: true,
+  mousewheel: true, // allows scrolling with wheel
+/* 
+  autoplay: {
+        delay: 10000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: true,
+      },
+*/
+});
+
+const subSwiperSoftware = new Swiper('.subSwiperSoftware', {
   direction: 'horizontal',
-  slidesPerView: 1,
-  spaceBetween: 30,
-  effect: 'coverflow',
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
+  loop: true,
+  nested: true,
+  grabCursor: true,
+  slidesPerView: 2,
+  spaceBetween: 25,
+  grid:{
+    rows: 2,
   },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+  /* 
+  autoplay: {
+        delay: 2000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: true,
+      },
+      */
+});
+
+const subSwiperWeb = new Swiper('.subSwiperWeb', {
+  direction: 'horizontal',
+  loop: true,
+  nested: true,
+  grabCursor: true,
+  slidesPerView: 2,
+  spaceBetween: 25,
+  grid:{
+    rows: 2,
   },
+  /* 
+  autoplay: {
+        delay: 2000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: true,
+      },
+      */
+});
+
+const subSwiperHardware = new Swiper('.subSwiperHardware', {
+  direction: 'horizontal',
+  loop: true,
+  nested: true,
+  grabCursor: true,
+  slidesPerView: 2,
+  spaceBetween: 25,
+  grid:{
+    rows: 2,
+  },
+  /* 
+  autoplay: {
+        delay: 2000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: true,
+      },
+      */
 });
 
 
-document.querySelectorAll('.subSwiper').forEach(sub => {
-  new Swiper(sub, {
-    direction: 'vertical',
-    grabCursor: true,
-    slidesPerView: 4,
-    spaceBetween: 30,
-    mousewheel: true,
-    grid: {
-      columnns: 3,
-    },
-  });
-});
