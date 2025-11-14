@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Inter';
 }
 
 body{
@@ -12,6 +13,7 @@ body{
 .aboutMeSection{
   height: 100dvh;
   width: 100dvw;
+  font-weight: 100px;
 
   .contentSection{
     display: flex;
@@ -33,81 +35,184 @@ body{
 }
 
 .projectsSection{
-  height: 70dvh;
-  width: 100dvw;
+  height: 70vh;
+  width: 100vw;
 }
 
 .contactsSection{
-  height: 50dvh;
-  width: 100dvw;
+  height: 50vh;
+  width: 100vw;
 
+  .contentSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+
+  p{
+    font-size: 1.5rem;
+  }
+
+
+  .mail{
+    color: white;
+    text-decoration: none;
+  }
+  svg{
+    height: 500%;
+    aspect-ratio: 1/1;
+  }
+  .github{
+    display: inline;
+  }
 }
 
 
 .projectsCategories{
   width: 100%;
-  height: 100%;
-  background-color: lightgray;
+  height: 100%;;
 }
 
 .projectCategorie{
+
   h2{
+    font-size: 3rem;
     text-align: center;
   }
   left: 5%;
   height: 100%;
   width: 90%;
-  background-color: aqua;
+  background-color: black;
 }
 
 .subSwiper {
-  height: 100%;
+  height: 90%;
 }
 
 .subSwiper .swiper-slide {
-  background: coral;
+  background: rgb(50, 50, 50);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
 }
 
-.project{
+.project {
+  display: flex;
+  flex-direction: column;       
   border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  img {
+    height: 75%;              
+    width: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+  }
+  a{
+    height: 25%;              
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.75rem;
+  }
 }
 
 .contentSection{
+  color: white;
   height: inherit;
+  position: absolute;
   width: 67%;
-  background-color: lightblue;
+  z-index: 0;
+  background-color: black;
+  border: 0.5px solid white;
 
 }
 
+
 .fillerSection{
+  position: absolute;
+  max-height: 100%;
   height: inherit;
-  width: 33%;
   background-color: lightgreen;
+  z-index: -1;
+  overflow: hidden;
+  max-height: 100%;
+  video{
+    height: inherit;
+    max-height: 100%;
+    object-fit: cover;
+  }
 }
 
 
 
 .aboutMeSection .contentSection{
-  float: right;
+  border-radius: 30px 0px 0px 30px;
+  right: 0;
 }
 .aboutMeSection .fillerSection{
-  float: left;
+  left: 0;
 }
 
 .projectsSection .contentSection{
-  float: left;
+  border-radius: 0px 30px 30px 0px;
+  left: 0;
 }
 .projectsSection .fillerSection{
-  float: right;
+  right: 0;
 }
 
 .contactsSection .contentSection{
-  float: right;
+  border-radius: 30px 0px 0px 30px;
+  right: 0;
 }
 
 .contactsSection .fillerSection{
-  float: left;
+  left: 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .fillerSection {
+    display: none;
+  }
+
+  .contentSection {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 0px !important;
+    border: none !important;
+  }
+
+  .aboutMeSection .contentSection,
+  .projectsSection .contentSection,
+  .contactsSection .contentSection {
+    border-radius: 0px;
+    left: 0;
+    right: 0;
+    border: none;
+  }
+}
+
+.tasksSection{
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black ;
+  font-size: 5rem;
+  color: white;
 }
