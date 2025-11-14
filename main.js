@@ -2,14 +2,12 @@ const swiper = new Swiper('.projectsCategories', {
   direction: 'vertical',
   loop: true,
   grabCursor: true,
-  mousewheel: true, // allows scrolling with wheel
-/* 
+  mousewheel: true,
   autoplay: {
         delay: 10000,
         pauseOnMouseEnter: true,
         disableOnInteraction: true,
       },
-*/
 });
 
 const subSwiperSoftware = new Swiper('.subSwiperSoftware', {
@@ -22,13 +20,11 @@ const subSwiperSoftware = new Swiper('.subSwiperSoftware', {
   grid:{
     rows: 2,
   },
-  /* 
   autoplay: {
         delay: 2000,
         pauseOnMouseEnter: true,
         disableOnInteraction: true,
       },
-      */
 });
 
 const subSwiperWeb = new Swiper('.subSwiperWeb', {
@@ -41,13 +37,11 @@ const subSwiperWeb = new Swiper('.subSwiperWeb', {
   grid:{
     rows: 2,
   },
-  /* 
   autoplay: {
         delay: 2000,
         pauseOnMouseEnter: true,
         disableOnInteraction: true,
       },
-      */
 });
 
 const subSwiperHardware = new Swiper('.subSwiperHardware', {
@@ -59,14 +53,10 @@ const subSwiperHardware = new Swiper('.subSwiperHardware', {
   spaceBetween: 25,
   grid:{
     rows: 2,
-  },
-  /* 
+  }, 
   autoplay: {
         delay: 2000,
         pauseOnMouseEnter: true,
         disableOnInteraction: true,
       },
-      */
 });
-
-
