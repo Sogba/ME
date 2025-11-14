@@ -204,6 +204,12 @@ body{
     right: 0;
     border: none;
   }
+  
+  .tasksSection{
+    h1{
+      font-size: 2rem;
+    }
+  }
 }
 
 .tasksSection{
@@ -213,6 +219,6 @@ body{
   justify-content: center;
   align-items: center;
   background-color: black ;
-  font-size: 5rem;
+  font-size: 3.5rem;
   color: white;
 }
